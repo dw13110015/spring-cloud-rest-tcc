@@ -41,6 +41,7 @@ public class UserController {
         if (user == null) {
             Shift.fatal(StatusCode.USER_NOT_EXISTS);
         }
+        System.out.println("test");
         return new ObjectDataResponse<>(user);
     }
 
